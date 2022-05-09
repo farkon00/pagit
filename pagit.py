@@ -14,3 +14,5 @@ else:
     match sys.argv[1]:
         case "log":
             log_actions(int(sys.argv[2]) if len(sys.argv) > 2 else 2)
+        case "rm-all":
+            rm_all()
