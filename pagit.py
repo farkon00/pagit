@@ -12,7 +12,5 @@ if len(sys.argv) < 2:
     print("Usage: python pagit.py <command>")
 else:
     match sys.argv[1]:
-        case "last-obj":
-            last_obj()
         case "log":
             log_actions(int(sys.argv[2]) if len(sys.argv) > 2 else 2)
