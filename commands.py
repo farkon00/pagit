@@ -6,7 +6,7 @@ def log(num: int):
     with open(".git/logs/HEAD", "r") as f:
         log = f.read()[:-1].split("\n")
 
-    for i in log[len(log)-num:]:
+    for i in log[-num:]:
         info = i.split()
         print(utils.prettify_log(info))
 
