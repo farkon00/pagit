@@ -9,7 +9,7 @@ for i in os.listdir(".git/objects"):
             print(zlib.decompress(open(f".git/objects/{i}/{j}", "rb").read()))"""
 
 if len(sys.argv) < 2:
-    print("Usage: python pagit.py <command>")
+    print("python <path_to_pagit>/pagit.py <command> <subcommand> [arguments]")
 else:
     match sys.argv[1]:
         case "log":
