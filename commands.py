@@ -2,8 +2,8 @@ import zlib
 import os
 import utils
 
-def log_actions(num: int):
-    with open(".git/logs/refs/heads/main", "r") as f:
+def log(num: int):
+    with open(".git/logs/HEAD", "r") as f:
         log = f.read()[:-1].split("\n")
 
     for i in log[len(log)-num:]:
