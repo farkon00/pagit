@@ -18,8 +18,8 @@ def rm_all():
         print("Aborted")
 
 def print_obj(args: list[str]):
-    if len(args) < 2:
+    if len(args) != 1:
         print("Usage: test-obj <folder> <hash>")
         return
 
-    print(utils.decode_object(f".git/objects/{args[0]}/{args[1]}"))
+    print(utils.decode_object(f".git/objects/{args[0][:2]}/{args[0][2:]}"))
