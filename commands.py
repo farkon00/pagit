@@ -16,3 +16,10 @@ def rm_all():
         os.remove(".git/index")
     else:
         print("Aborted")
+
+def print_obj(args: list[str]):
+    if len(args) < 2:
+        print("Usage: test-obj <folder> <hash>")
+        return
+
+    print(utils.decode_object(f".git/objects/{args[0]}/{args[1]}"))

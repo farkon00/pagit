@@ -16,3 +16,5 @@ else:
             log(int(sys.argv[2]) if len(sys.argv) > 2 else 2)
         case "rm-all":
             rm_all()
+        case "object":
+            print_obj(sys.argv[2:])
