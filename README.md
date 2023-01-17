@@ -10,14 +10,14 @@ This project is in realy early stage of development, everything may change. And 
 
 # Commands
 ## log
-Takes from zero to one arguments. First argument is number of commits to print, default 2. 
+Takes from zero to one arguments. First argument is the number of commits to print, defaults to 2. 
 
-Logs last n commits in current repo.
+Logs last n commits in the current repo.
 
 ## rm-all
-Removes all tracked files from repo. Doesnt take any arguments.
+Removes all tracked files from the repo. Doesn't take any arguments.
 
 ## object
-Takes one argument, hash of object.
+Takes one argument, hash of the object.
 
-Prints content of object with hash n.
+Prints content of the object with a specfic hash.
